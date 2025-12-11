@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Smudge Burgers</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee&family=Inter:wght@300;400;600&family=Montserrat:wght@300;400;600&family=Cormorant+Garamond:wght@300;400;600&family=Josefin+Sans:wght@300;400;600&family=Lora:wght@400;600&family=Work+Sans:wght@300;400;600&family=Pacifico&family=Dancing+Script:wght@400;600&family=Quicksand:wght@300;400;600&family=Poppins:wght@300;400;600&family=Playfair+Display:wght@400;600&family=Cormorant:wght@400;600&family=Source+Serif+Pro:wght@300;400;600&family=Raleway:wght@300;600&family=Cinzel:wght@400;600&family=Nunito:wght@300;600&family=Satisfy&family=Kanit:wght@400;600&family=Russo+One&family=Roboto:wght@300;400;600&family=Manrope:wght@300;400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- AOS (Animate On Scroll) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+
+    <!-- Font Awesome for Social Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+    <!-- Navigation Header -->
+    <header class="navbar-section">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid px-4 px-md-5">
+                <a class="navbar-brand" href="index.html">
+                    <span class="brand-logo"><img src="images/smudge-logo.png" alt="" class="img-fluid"></span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="ms-auto d-flex align-items-center gap-4 flex-wrap">
+                        <div class="nav-links">
+                            <a href="index.html" class="nav-link">Home</a>
+                            <a href="about.html" class="nav-link">About</a>
+                            <a href="menu.html" class="nav-link">Menu</a>
+                            <!-- <a href="#deals" class="nav-link">Hot Deals</a> -->
+                            <a href="contact.html" class="nav-link">Contact Us</a>
+                        </div>
+                        <div class="phone-section">
+                            <span class="phone-number">+10 123 456 7898</span>
+                        </div>
+                        <button class="btn-order-header">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- <section class="menu-hero">
+        <video class="about-hero-video" autoplay muted loop playsinline>
+            <source src="videos/menu-video.mp4" type="video/mp4">
+        </video>
+
+        <div class="menu-hero-overlay"></div>
+
+        <div class="about-hero-content text-center">
+            <h1 class="about-title" data-aos="fade-up">Our Menu</h1>
+
+            <nav aria-label="breadcrumb" data-aos="fade-up" data-aos-delay="150">
+                <ol class="breadcrumb justify-content-center">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Menu</li>
+                </ol>
+            </nav>
+        </div>
+
+    </section> -->
+
+    <section class="contact-hero-section">
+        <div class="contact-overlay"></div>
+
+        <div class="about-hero-content text-center">
+            <h1 class="about-title" data-aos="fade-up">Contact Us</h1>
+
+            <nav aria-label="breadcrumb" data-aos="fade-up" data-aos-delay="150">
+                <ol class="breadcrumb justify-content-center">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Contact</li>
+                </ol>
+            </nav>
+        </div>
+
+    </section>
+
+
+
+    <section class="contact-section" data-aos="">
+        <div class="container">
+            <div class="row g-4">
+
+                <!-- LEFT FORM -->
+                <div class="col-lg-7">
+                    <div class="contact-form-box p-4" data-aos="fade-up">
+                        <h3 class="contact-title mb-3">GET IN TOUCH</h3>
+                        <!-- <p class="section-subtext mb-4">
+                            Star asset slice scale outline plugin hand overflow. Asset vector
+                            variant undo select hand flatten. Ipsum rectangle image edit
+                            background select.
+                        </p> -->
+
+                        <form id="contactForm">
+
+                            <div class="mb-3" data-aos="fade-up">
+                                <label class="form-label">Name*</label>
+                                <input type="text" class="form-control custom-input" placeholder="Your Name" required>
+                            </div>
+
+                            <div class="mb-3" data-aos="fade-up" data-aos-delay="">
+                                <label class="form-label">Email Address*</label>
+                                <input type="email" class="form-control custom-input" placeholder="Your Email" required>
+                            </div>
+
+                            <div class="mb-3" data-aos="fade-up" data-aos-delay="">
+                                <label class="form-label">Phone Number*</label>
+                                <input type="tel" class="form-control custom-input" placeholder="Your Phone Number"
+                                    required>
+                            </div>
+
+                            <div class="mb-3" data-aos="fade-up" data-aos-delay="">
+                                <label class="form-label">Message*</label>
+                                <textarea class="form-control custom-input" rows="5" placeholder="Your Message"
+                                    required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn send-btn w-100">Send</button>
+
+                        </form>
+
+                    </div>
+                </div>
+
+                <!-- RIGHT CONTACT INFO CARDS -->
+                <div class="col-lg-5">
+                    <div class="info-card p-4 mb-3" data-aos="fade-left">
+                        <div class="icon mb-2"><i class="bi bi-house-door"></i></div>
+                        <h5 class="info-title mb-2">Shop Address</h5>
+                        <p class="info-text mb-0">4517/6 New Washington Ave, Manchester, South Kentucky 39495</p>
+                    </div>
+
+                    <div class="info-card p-4 mb-3" data-aos="fade-left">
+                        <div class="icon mb-2"><i class="bi bi-telephone"></i></div>
+                        <h5 class="info-title mb-2">Phone Number</h5>
+                        <p class="info-text">Our customer care operates Monday to Saturday, from 10:00 am to 6:00 pm.
+                        </p>
+                        <p class="fw-bold mb-0">+123 456 789 000</p>
+                    </div>
+
+                    <div class="info-card p-4" data-aos="fade-left">
+                        <div class="icon mb-2"><i class="bi bi-envelope"></i></div>
+                        <h5 class="info-title mb-2">Email Address</h5>
+                        <p class="info-text">Our support team will respond to you within 48 hours during regular
+                            business hours.</p>
+                        <p class="fw-bold mb-0">example@gmail.com</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="map-section">
+        <div class="container">
+            <div class="modern-map-card" data-aos="fade-up">
+                <h4 class="map-header">Find Us on Map</h4>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509301!2d144.95373531531594!3d-37.81627974201168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf5774d9c8671c938!2sVictoria%20Harbour!5e0!3m2!1sen!2sin!4v1673539642345!5m2!1sen!2sin"
+                    allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer-section foot-back">
+        <div class="container">
+
+            <div class="row g-5">
+
+                <!-- LEFT COLUMN -->
+                <div class="col-lg-4">
+
+                    <a class="navbar-brand" href="index.html">
+                        <span class="brand-logo"><img src="images/smudge-logo.png" alt="" class="img-fluid"></span>
+                    </a>
+
+                    <p class="footer-text" data-aos="fade-up" data-aos-delay="200">
+                        We’re committed to delivering exceptional care with compassion, trust,
+                        and integrity. From your first visit to long-term support, your health and
+                        comfort are always our priority.
+                    </p>
+
+                    <h6 class="mt-4 mb-2 footer-heading" data-aos="fade-right" data-aos-delay="900">Visit Us</h6>
+                    <p class="footer-text" data-aos="fade-right" data-aos-delay="900">
+                        123 Wellness Avenue, Suite<br>
+                        405, New York, NY 10016<br>
+                        United States
+                    </p>
+
+
+                </div>
+
+                <!-- MIDDLE COLUMN -->
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="row mb-2">
+                        <div class="col-5">
+                            <h6 class="footer-heading" data-aos="fade-up" data-aos-delay="200">Main Pages</h6>
+                        </div>
+                        <div class="col-7">
+                            <h6 class="footer-heading" data-aos="fade-up" data-aos-delay="200">Opening Hours</h6>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <!-- Main Pages Links -->
+                        <div class="col-5">
+                            <ul class="footer-links" data-aos="fade-up" data-aos-delay="200">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="menu.html">Menu</a></li>
+                                <!-- <li><a href="blogs.php">Blogs</a></li> -->
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Services Links -->
+                        <div class="col-7">
+                            <ul class="footer-links" data-aos="fade-up" data-aos-delay="200">
+                                <li><a href="javascript:void(0)">Monday to Friday <br> 10:00 AM to 12:00 PM</a></li>
+                                <li><a href="javascript:void(0)">Saturday to Sunday <br> 10:00 AM to 10:00 PM</a></li>
+                                <!-- <li><a href="financial-advisory.php">Financial Advisory</a></li> -->
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- RIGHT COLUMN -->
+                <div class="col-lg-4 col-md-6">
+                    <h6 class="footer-heading mb-3" data-aos="fade-up" data-aos-delay="200">Newsletter</h6>
+                    <p class="footer-text" data-aos="fade-up" data-aos-delay="200">
+                        Let’s transform your vision into results and discuss your vision with us.
+                    </p>
+
+                    <div class="newsletter-box mb-2" data-aos="fade-up" data-aos-delay="200">
+                        <input type="email" class="form-control newsletter-input"
+                            placeholder="Enter your email address">
+                    </div>
+
+                    <button class="subscribe-btn" data-aos="fade-up" data-aos-delay="200">
+                        Subscribe <i class="bi bi-arrow-up-right"></i>
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- FLOATING SCOOTER ANIMATION -->
+            <div class="footer-animated-images">
+
+                <!-- Scooter + Light Group -->
+                <div class="scooter-wrapper">
+
+                    <!-- Delivery Boy Scooter -->
+                    <img src="images/deli-boy.webp" alt="Delivery Boy Scooter" class="footer-boy">
+
+                    <!-- Headlight Light SVG -->
+                    <img src="images/light.svg" alt="Scooter Light" class="scooter-light">
+
+                </div>
+
+            </div>
+
+
+
+            <hr class="footer-divider mt-4">
+
+            <!-- BOTTOM ROW -->
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center pt-3">
+
+                <p class="footer-copy mb-3 mb-md-0">
+                    &copy; 2025 Smudge. All rights reserved. Designed & Developed
+                    By <a href="https://brandingwaale.com/" class="foot-url">Brandingwaale
+                        Webtech.</a>
+                </p>
+
+                <div class="footer-social d-flex gap-3">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Custom JS -->
+    <script src="javascript/script.js"></script>
+
+</body>
+
+</html>

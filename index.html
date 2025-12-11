@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smudge Burgers</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee&family=Inter:wght@300;400;600&family=Montserrat:wght@300;400;600&family=Cormorant+Garamond:wght@300;400;600&family=Josefin+Sans:wght@300;400;600&family=Lora:wght@400;600&family=Work+Sans:wght@300;400;600&family=Pacifico&family=Dancing+Script:wght@400;600&family=Quicksand:wght@300;400;600&family=Poppins:wght@300;400;600&family=Playfair+Display:wght@400;600&family=Cormorant:wght@400;600&family=Source+Serif+Pro:wght@300;400;600&family=Raleway:wght@300;600&family=Cinzel:wght@400;600&family=Nunito:wght@300;600&family=Satisfy&family=Kanit:wght@400;600&family=Russo+One&family=Roboto:wght@300;400;600&family=Manrope:wght@300;400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- AOS (Animate On Scroll) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+
+    <!-- Font Awesome for Social Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+    <!-- Navigation Header -->
+    <header class="navbar-section">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid px-4 px-md-5">
+                <a class="navbar-brand" href="index.html">
+                    <span class="brand-logo"><img src="images/smudge-logo.png" alt="" class="img-fluid"></span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="ms-auto d-flex align-items-center gap-4 flex-wrap">
+                        <div class="nav-links">
+                            <a href="index.html" class="nav-link">Home</a>
+                            <a href="about.html" class="nav-link">About</a>
+                            <a href="menu.html" class="nav-link">Menu</a>
+                            <!-- <a href="#deals" class="nav-link">Hot Deals</a> -->
+                            <a href="contact.html" class="nav-link">Contact Us</a>
+                        </div>
+                        <div class="phone-section">
+                            <span class="phone-number">+10 123 456 7898</span>
+                        </div>
+                        <button class="btn-order-header">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+
+        <div class="ps-5">
+            <div class="row align-items-center">
+                <div class="col-lg-5" data-aos="fade-right">
+                    <span class="hero-badge">Taste the Future of Burgers</span>
+                    <h1 class="hero-title">Introducing the Legendary <span>OG Murgh Makhani</span></h1>
+                    <p class="hero-desc">A rich, flame-grilled masterpiece infused with Indian makhani flavors, layered
+                        with juicy chicken, double cheddar melt, crisp veggies and our signature secret sauce crafted
+                        for true burger lovers.</p>
+                    <div class="d-flex gap-3 mt-3">
+                        <button class="primary-btn">Order Now</button>
+                        <button class="btn btn-outline-light rounded-4 px-4 fs-5">View Menu</button>
+                    </div>
+                    <!-- <div class="hero-stats">
+                        <div class="stat-box">
+                            <h5>4.9⭐</h5>
+                            <p>Rating</p>
+                        </div>
+                        <div class="stat-box">
+                            <h5>25k+</h5>
+                            <p>Orders</p>
+                        </div>
+                        <div class="stat-box">
+                            <h5>10 min</h5>
+                            <p>Delivery</p>
+                        </div>
+                    </div> -->
+                    <!-- <div class="social-icons mt-4">
+                        <i class="bi bi-instagram"></i>
+                        <i class="bi bi-facebook"></i>
+                        <i class="bi bi-twitter"></i>
+                    </div> -->
+                </div>
+
+                <div class="col-lg-7 col-md-12 hero-product" data-aos="fade-left" data-aos-duration="1000">
+                    <!-- <div class="orange-section"></div> -->
+
+                    <!-- <img src="images/png-burg.png" alt="" class="img-fluid w-50"> -->
+
+                    <!-- <div class="product-carousel">
+                        <div class="product-card active">
+                            <div class="product-image-container">
+                                <div class="circular-bg"></div>
+                                <img src="images/pngegg (1).png" alt="Cheezy Bluster" class="product-image">
+                            </div>
+                            <div class="product-price">$3.66</div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="orange-section"></div>
+                            <div class="product-image-container">
+                                <div class="circular-bg"></div>
+                                <img src="images/pngegg (2).png" alt="Premium Burger" class="product-image">
+                            </div>
+                            <div class="product-price">$4.99</div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="orange-section"></div>
+                            <div class="product-image-container">
+                                <div class="circular-bg"></div>
+                                <img src="images/pngegg (3).png" alt="Classic Burger" class="product-image">
+                            </div>
+                            <div class="product-price">$3.99</div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-indicators">
+                        <span class="indicator active" data-slide="0"></span>
+                        <span class="indicator" data-slide="1"></span>
+                        <span class="indicator" data-slide="2"></span>
+                    </div>
+
+                    <div class="carousel-controls">
+                        <button class="control-btn prev" id="prevBtn" title="Previous">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="control-btn next" id="nextBtn" title="Next">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div> -->
+
+
+                    <!-- Background Video -->
+                    <video class="hero-bg-video" autoplay muted loop playsinline>
+                        <source src="videos/op-burg.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="menu-section">
+        <div class="container">
+
+            <div class="d-flex justify-content-between align-items-center flex-wrap mb-5">
+                <h2 class="menu-title mb-0" data-aos="fade-right">
+                    Explore <span>Menu</span>
+                </h2>
+
+                <button class="primary-btn" data-aos="" data-aos-delay="100">View All Items</button>
+            </div>
+
+
+            <div class="row g-4">
+
+                <!-- Card 1 -->
+                <div class="col-lg-3 col-md-6" data-aos="fade-up">
+                    <div class="menu-card text-center">
+                        <img src="https://pngimg.com/uploads/burger_sandwich/burger_sandwich_PNG4160.png"
+                            class="menu-img">
+                        <h5>OG Murgh Makhani</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="price">$3.66</div>
+                        <a href="#" class="order-btn">Order Now</a>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="menu-card text-center">
+                        <img src="images/fries.png" class="menu-img">
+                        <h5>House Spice Mix Fries</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="price">$1.45</div>
+                        <a href="#" class="order-btn">Order Now</a>
+                    </div>
+                </div>
+
+                <!-- Special Card -->
+                <div class="col-lg-3 col-md-6" data-aos="zoom-in">
+                    <div class="menu-card text-center">
+                        <img src="images/veg-spaghetti.png" class="menu-img">
+                        <h5>Spaghetti Basilica Pesto Pasta</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="price">$4.50</div>
+                        <a href="#" class="order-btn">Order Now</a>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="menu-card text-center">
+                        <img src="images/frappe.png" class="menu-img">
+                        <h5>Chocolate Hazelnut Frappe</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="price">$4.00</div>
+                        <a href="#" class="order-btn">Order Now</a>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="col-lg-3 col-md-6" data-aos="fade-up">
+                    <div class="menu-card text-center">
+                        <img src="images/panckae.png" class="menu-img">
+                        <h5>Nutella & Frappe Pancake</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="price">$3.66</div>
+                        <a href="#" class="order-btn">Order Now</a>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="menu-card text-center">
+                        <img src="images/dip-2.png" class="menu-img">
+                        <h5>Spinach & Jalapeno Mayo</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="price">$3.40</div>
+                        <a href="#" class="order-btn">Order Now</a>
+                    </div>
+                </div>
+
+                <!-- Card 7 -->
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="menu-card text-center">
+                        <img src="images/chick-wings.png" class="menu-img">
+                        <h5>Chicken Wings With BBQ Sauce</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="price">$4.30</div>
+                        <a href="#" class="order-btn">Order Now</a>
+                    </div>
+                </div>
+
+                <!-- Card 8 -->
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="menu-card text-center">
+                        <img src="images/veg-burger.png" class="menu-img">
+                        <h5>Potato Dynamite</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="price">$4.00</div>
+                        <a href="#" class="order-btn">Order Now</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- <section class="hot-deals-section">
+        <div class="container">
+            <h3 class="hot-title">Hot <span>Deals</span></h3>
+
+           
+        </div>
+    </section> -->
+
+
+    <!-- <section class="hot-deals-section">
+        <div class="container">
+
+            <div class="section-header text-center mb-5">
+                <p class="small-title">SPECIAL DEALS</p>
+                <h2 class="main-title">Best <span>Hot Deals</span></h2>
+            </div>
+
+            <div class="hot-deals-wrapper">
+
+
+                <div class="row align-items-center deal-card active">
+
+                    <div class="col-lg-7 text-center bg-primary">
+                        <div class="image-wrap">
+                            <img src="images/combo-png-1.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5 deal-content">
+                        <h3>McCombo’s <span>- Deal</span></h3>
+
+                        <ul>
+                            <li><i class="bi bi-check-circle"></i> 30% Off Every Order</li>
+                            <li><i class="bi bi-check-circle"></i> Free Delivery</li>
+                            <li><i class="bi bi-check-circle"></i> Limited Time Offer</li>
+                        </ul>
+
+                        <div class="price-box">
+                            <span class="old-price">$52</span>
+                            <span class="new-price">$45</span>
+                        </div>
+
+                        <button class="primary-btn">Order Now</button>
+                    </div>
+                </div>
+
+                <div class="row align-items-center deal-card">
+
+                    <div class="col-lg-7 text-center">
+                        <div class="image-wrap">
+                            <img src="images/combo-png-2.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5 deal-content">
+                        <h3>Chicken <span>- Combo</span></h3>
+
+                        <ul>
+                            <li><i class="bi bi-check-circle"></i> Crunchy Chicken</li>
+                            <li><i class="bi bi-check-circle"></i> Extra Cheese</li>
+                            <li><i class="bi bi-check-circle"></i> 25% Discount</li>
+                        </ul>
+
+                        <div class="price-box">
+                            <span class="old-price">$40</span>
+                            <span class="new-price">$30</span>
+                        </div>
+
+                        <button class="primary-btn">Order Now</button>
+                    </div>
+                </div>
+
+                <div class="row align-items-center deal-card">
+
+                    <div class="col-lg-7 text-center">
+                        <div class="image-wrap">
+                            <img src="images/combo-png-5.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5 deal-content">
+                        <h3>BBQ <span>- Meal</span></h3>
+
+                        <ul>
+                            <li><i class="bi bi-check-circle"></i> Smoky BBQ Burger</li>
+                            <li><i class="bi bi-check-circle"></i> French Fries</li>
+                            <li><i class="bi bi-check-circle"></i> Cold Drink Free</li>
+                        </ul>
+
+                        <div class="price-box">
+                            <span class="old-price">$48</span>
+                            <span class="new-price">$35</span>
+                        </div>
+
+                        <button class="primary-btn">Order Now</button>
+                    </div>
+                </div>
+
+                <div class="row align-items-center deal-card">
+
+                    <div class="col-lg-7  text-center">
+                        <div class="image-wrap">
+                            <img src="images/combo-png-3.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5 deal-content">
+                        <h3>Zinger <span>- Combo</span></h3>
+
+                        <ul>
+                            <li><i class="bi bi-check-circle"></i> Spicy Zinger Burger</li>
+                            <li><i class="bi bi-check-circle"></i> Loaded Fries</li>
+                            <li><i class="bi bi-check-circle"></i> Cold Drink Free</li>
+                        </ul>
+
+                        <div class="price-box">
+                            <span class="old-price">$46</span>
+                            <span class="new-price">$32</span>
+                        </div>
+
+                        <button class="primary-btn">Order Now</button>
+                    </div>
+
+
+                </div>
+
+                <div class="row align-items-center deal-card">
+
+                    <div class="col-lg-7  text-center">
+                        <div class="image-wrap">
+                            <img src="images/combo-png-6.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5 deal-content">
+                        <h3>Cheese Burst <span>- Pizza</span></h3>
+
+                        <ul>
+                            <li><i class="bi bi-check-circle"></i> Double Cheese Layer</li>
+                            <li><i class="bi bi-check-circle"></i> Garlic Bread Free</li>
+                            <li><i class="bi bi-check-circle"></i> Family Size</li>
+                        </ul>
+
+                        <div class="price-box">
+                            <span class="old-price">$58</span>
+                            <span class="new-price">$42</span>
+                        </div>
+
+                        <button class="primary-btn">Order Now</button>
+                    </div>
+
+                </div>
+
+                <div class="row align-items-center deal-card">
+
+                    <div class="col-lg-7 text-center">
+                        <div class="image-wrap">
+                            <img src="images/combo-png-10.png" class="img-fluid mb-5" alt="">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5 deal-content">
+                        <h3>BBQ Burger <span>- Feast</span></h3>
+
+                        <ul>
+                            <li><i class="bi bi-check-circle"></i> Smoky BBQ Sauce</li>
+                            <li><i class="bi bi-check-circle"></i> Crispy Onion Rings</li>
+                            <li><i class="bi bi-check-circle"></i> Extra Cheese Slice</li>
+                        </ul>
+
+                        <div class="price-box">
+                            <span class="old-price">$50</span>
+                            <span class="new-price">$37</span>
+                        </div>
+
+                        <button class="primary-btn">Order Now</button>
+                    </div>
+
+                </div>
+
+
+
+
+
+            </div>
+
+            <div class="slider-controls text-center">
+                <button class="nav-btn" onclick="prevDeal()"><i class="bi bi-chevron-left"></i></button>
+                <button class="nav-btn" onclick="nextDeal()"><i class="bi bi-chevron-right"></i></button>
+            </div>
+        </div>
+    </section> -->
+
+    <section class="offer-grid-section">
+
+        <div class="row gx-4 gy-4">
+
+            <!-- CARD 1 -->
+            <div class="col-lg-7">
+                <div class="offer-card card-orange" data-aos="fade-right" data-aos-delay="100">
+                    <div class="offer-content">
+                        <h1 class="offer-title-one">50% off</h1>
+                        <p class="offer-desc">A SWEET AND SAVORY TWIST, SERVED WITH CHIPOTLE MAYO</p>
+
+                        <button class="btn btn-light btn-lg rounded-pill px-4 shadow-sm">
+                            Order Now
+                        </button>
+                    </div>
+
+                    <!-- <img src="img1.png" class="offer-img" alt=""> -->
+                </div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="col-lg-5">
+                <div class="offer-card card-blue" data-aos="fade-left" data-aos-delay="200">
+                    <div class="offer-content-white">
+                        <span class="badge-small">BITE INTO JOY</span>
+                        <h2 class="offer-title-white">
+                            SMUDGE Burgers<br>Where Every<br>Offer Delights!
+                        </h2>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="col-lg-5">
+                <div class="offer-card card-yellow" data-aos="fade-right" data-aos-delay="300">
+                    <img src="images/delivery-boy.png" class="" width="260px" alt="" data-aos="fade-right"
+                        data-aos-delay="400">
+
+                    <div class="offer-content">
+                        <h2 class="offer-title-two">SUPER-FAST<br>DELIVERY<br>FOR ONLINE<br>ORDERS!</h2>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 4 -->
+            <div class="col-lg-7">
+                <div class="offer-card card-dark" data-aos="fade-left" data-aos-delay="500">
+                    <div class="offer-content-white">
+                        <h2 class="offer-title-orange">SPICY</h2>
+                        <h4 class="offer-white-sub">LIMITED-TIME SPECIAL</h4>
+                        <p class="offer-desc">DOUBLE THE DELIGHT!</p>
+                        <h3 class="offer-title-orange">50% OFF</h3>
+
+                        <button class="btn btn-light btn-lg rounded-pill px-4 mt-2 shadow-sm">
+                            View Menu
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-try-hero">
+
+        <!-- Title -->
+        <div class="title-wrap">
+            <h2>Why Should You <span>Try?</span></h2>
+            <p>because,</p>
+        </div>
+
+        <!-- Floating Text Labels -->
+        <div class="float-text best">Best Quality</div>
+        <div class="float-text natural">Natural Ingredients</div>
+        <div class="float-text fast">Fast Delivery</div>
+        <div class="float-text huge">Huge Quantity</div>
+
+        <!-- MASSIVE BURGER IMAGE -->
+        <!-- <div class="burger-stage"> -->
+        <img src="images/burgerrrr.png" alt="Burger" class="mega-burger" data-aos="zoom-in-up" data-aos-delay="400">
+        <!-- </div> -->
+
+    </section>
+
+    <section class="testimonial-section">
+        <h2 class="testimonial-title" data-aos="fade-up">Customer <span>Reviews</span></h2>
+
+        <div class="slider-wrapper" data-aos="fade-up" data-aos-delay="100">
+            <div class="testimonial-slider" id="testimonialSlider">
+
+                <!-- Card 1 -->
+                <div class="testimonial-card">
+                    <img src="https://i.pravatar.cc/100?img=32">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
+                    <h6>- Jenny</h6>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="testimonial-card">
+                    <img src="https://i.pravatar.cc/100?img=13">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
+                    <h6>- Frankline</h6>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="testimonial-card">
+                    <img src="https://i.pravatar.cc/100?img=28">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
+                    <h6>- Sam</h6>
+                </div>
+
+                <!-- DUPLICATE FOR PERFECT INFINITE LOOP -->
+                <div class="testimonial-card">
+                    <img src="https://i.pravatar.cc/100?img=32">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
+                    <h6>- Jenny</h6>
+                </div>
+
+                <div class="testimonial-card">
+                    <img src="https://i.pravatar.cc/100?img=13">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
+                    <h6>- Frankline</h6>
+                </div>
+
+                <div class="testimonial-card">
+                    <img src="https://i.pravatar.cc/100?img=28">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
+                    <h6>- Sam</h6>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-section foot-back">
+        <div class="container">
+
+            <div class="row g-5">
+
+                <!-- LEFT COLUMN -->
+                <div class="col-lg-4">
+
+                    <a class="navbar-brand" href="index.html">
+                        <span class="brand-logo"><img src="images/smudge-logo.png" alt="" class="img-fluid"></span>
+                    </a>
+
+                    <p class="footer-text" data-aos="fade-up" data-aos-delay="200">
+                        We’re committed to delivering exceptional care with compassion, trust,
+                        and integrity. From your first visit to long-term support, your health and
+                        comfort are always our priority.
+                    </p>
+
+                    <h6 class="mt-4 mb-2 footer-heading" data-aos="fade-right" data-aos-delay="900">Visit Us</h6>
+                    <p class="footer-text" data-aos="fade-right" data-aos-delay="900">
+                        123 Wellness Avenue, Suite<br>
+                        405, New York, NY 10016<br>
+                        United States
+                    </p>
+
+
+                </div>
+
+                <!-- MIDDLE COLUMN -->
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="row mb-2">
+                        <div class="col-5">
+                            <h6 class="footer-heading" data-aos="fade-up" data-aos-delay="200">Main Pages</h6>
+                        </div>
+                        <div class="col-7">
+                            <h6 class="footer-heading" data-aos="fade-up" data-aos-delay="200">Opening Hours</h6>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <!-- Main Pages Links -->
+                        <div class="col-5">
+                            <ul class="footer-links" data-aos="fade-up" data-aos-delay="200">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="menu.html">Menu</a></li>
+                                <!-- <li><a href="blogs.php">Blogs</a></li> -->
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Services Links -->
+                        <div class="col-7">
+                            <ul class="footer-links" data-aos="fade-up" data-aos-delay="200">
+                                <li><a href="insurance-solutions.php">Monday to Friday <br> 10:00 AM to 12:00 PM</a>
+                                </li>
+                                <li><a href="investment-solutions.php">Saturday to Sunday <br> 10:00 AM to 10:00 PM</a>
+                                </li>
+                                <!-- <li><a href="financial-advisory.php">Financial Advisory</a></li> -->
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- RIGHT COLUMN -->
+                <div class="col-lg-4 col-md-6">
+                    <h6 class="footer-heading mb-3" data-aos="fade-up" data-aos-delay="200">Newsletter</h6>
+                    <p class="footer-text" data-aos="fade-up" data-aos-delay="200">
+                        Let’s transform your vision into results and discuss your vision with us.
+                    </p>
+
+                    <div class="newsletter-box mb-2" data-aos="fade-up" data-aos-delay="200">
+                        <input type="email" class="form-control newsletter-input"
+                            placeholder="Enter your email address">
+                    </div>
+
+                    <button class="subscribe-btn" data-aos="fade-up" data-aos-delay="200">
+                        Subscribe <i class="bi bi-arrow-up-right"></i>
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- FLOATING SCOOTER ANIMATION -->
+            <div class="footer-animated-images">
+
+                <!-- Scooter + Light Group -->
+                <div class="scooter-wrapper">
+
+                    <!-- Delivery Boy Scooter -->
+                    <img src="images/deli-boy.webp" alt="Delivery Boy Scooter" class="footer-boy">
+
+                    <!-- Headlight Light SVG -->
+                    <img src="images/light.svg" alt="Scooter Light" class="scooter-light">
+
+                </div>
+
+            </div>
+
+
+
+            <hr class="footer-divider mt-4">
+
+            <!-- BOTTOM ROW -->
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center pt-3">
+
+                <p class="footer-copy mb-3 mb-md-0">
+                    &copy; 2025 Smudge. All rights reserved. Designed & Developed
+                    By <a href="https://brandingwaale.com/" class="foot-url">Brandingwaale
+                        Webtech.</a>
+                </p>
+
+                <div class="footer-social d-flex gap-3">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+
+
+    <!-- Contact Section -->
+    <!-- <section id="contact" class="contact-section py-5">
+        <div class="container" data-aos="fade-up">
+            <h2 class="section-title text-center mb-5">Contact Us</h2>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <form class="contact-form">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-order-hero w-100">Send Message</button>
+                    </form>
+                </div>
+                <div class="col-lg-6">
+                    <div class="contact-info">
+                        <div class="info-item mb-4">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+10 123 456 7898</p>
+                            </div>
+                        </div>
+                        <div class="info-item mb-4">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>info@burgers.com</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Address</h4>
+                                <p>123 Food Street, City, Country</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Custom JS -->
+    <script src="javascript/script.js"></script>
+
+</body>
+
+</html>

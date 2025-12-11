@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Menu | Smudge Burgers</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee&family=Inter:wght@300;400;600&family=Montserrat:wght@300;400;600&family=Cormorant+Garamond:wght@300;400;600&family=Josefin+Sans:wght@300;400;600&family=Lora:wght@400;600&family=Work+Sans:wght@300;400;600&family=Pacifico&family=Dancing+Script:wght@400;600&family=Quicksand:wght@300;400;600&family=Poppins:wght@300;400;600&family=Playfair+Display:wght@400;600&family=Cormorant:wght@400;600&family=Source+Serif+Pro:wght@300;400;600&family=Raleway:wght@300;600&family=Cinzel:wght@400;600&family=Nunito:wght@300;600&family=Satisfy&family=Kanit:wght@400;600&family=Russo+One&family=Roboto:wght@300;400;600&family=Manrope:wght@300;400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- AOS (Animate On Scroll) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+
+    <!-- Font Awesome for Social Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+    <!-- Navigation Header -->
+    <header class="navbar-section">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid px-4 px-md-5">
+                <a class="navbar-brand" href="index.html">
+                    <span class="brand-logo"><img src="images/smudge-logo.png" alt="" class="img-fluid"></span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="ms-auto d-flex align-items-center gap-4 flex-wrap">
+                        <div class="nav-links">
+                            <a href="index.html" class="nav-link">Home</a>
+                            <a href="about.html" class="nav-link">About</a>
+                            <a href="menu.html" class="nav-link">Menu</a>
+                            <!-- <a href="#deals" class="nav-link">Hot Deals</a> -->
+                            <a href="contact.html" class="nav-link">Contact Us</a>
+                        </div>
+                        <div class="phone-section">
+                            <span class="phone-number">+10 123 456 7898</span>
+                        </div>
+                        <button class="btn-order-header">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <section class="menu-hero">
+        <video class="about-hero-video" autoplay muted loop playsinline>
+            <source src="videos/menu-video.mp4" type="video/mp4">
+        </video>
+
+        <div class="menu-hero-overlay"></div>
+
+        <div class="about-hero-content text-center">
+            <h1 class="about-title" data-aos="fade-up">Our Menu</h1>
+
+            <nav aria-label="breadcrumb" data-aos="fade-up" data-aos-delay="150">
+                <ol class="breadcrumb justify-content-center">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Menu</li>
+                </ol>
+            </nav>
+        </div>
+
+    </section>
+
+
+    <section class="menu-section">
+        <div class="container">
+
+            <div class="d-flex justify-content-center align-items-center flex-wrap mb-5">
+                <h2 class="menu-title mb-0" data-aos="fade-up">
+                    Explore <span>Menu</span>
+                </h2>
+
+                <!-- <button class="primary-btn" data-aos="" data-aos-delay="100">View All Items</button> -->
+            </div>
+
+            <!-- Category Filters -->
+            <div class="menu-filters d-flex flex-wrap justify-content-center gap-3 mb-5">
+                <button class="filter-btn active" data-aos="fade-up" data-aos-delay="100" data-category="all">All</button>
+                <button class="filter-btn" data-aos="fade-up" data-aos-delay="200" data-category="burgers">Burgers</button>
+                <button class="filter-btn" data-aos="fade-up" data-aos-delay="300" data-category="dips">Dips</button>
+                <button class="filter-btn" data-aos="fade-up" data-aos-delay="400" data-category="veg-sides">Veg Sides</button>
+                <button class="filter-btn" data-aos="fade-up" data-aos-delay="500" data-category="non-veg-sides">Non-Veg Sides</button>
+                <button class="filter-btn" data-aos="fade-up" data-aos-delay="600" data-category="pasta">Pasta</button>
+                <button class="filter-btn" data-aos="fade-up" data-aos-delay="700" data-category="from-the-oven">From The Oven</button>
+                <button class="filter-btn" data-aos="fade-up" data-aos-delay="800" data-category="cold-corner">Cold Corner</button>
+            </div>
+
+            <!-- Menu Items -->
+            <div class="row g-4" id="menuItems">
+
+                <!-- Item -->
+                <div class="col-lg-3 col-md-6 col-sm-6 menu-item" data-aos="fade-up" data-aos-delay="900" data-category="burgers">
+                    <div class="menu-card text-center">
+                        <img src="https://pngimg.com/uploads/burger_sandwich/burger_sandwich_PNG4160.png"
+                            class="menu-img">
+                        <h5>OG Murgh Makhani</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="price">$3.66</div>
+                        <a href="#" class="order-btn">Order Now</a>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-lg-3 col-md-6 menu-item" data-aos="fade-up" data-aos-delay="900" data-category="fries">
+                    <div class="menu-card text-center">
+                        <img src="images/fries.png" class="menu-img">
+                        <h5>House Spice Mix Fries</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="price">$1.45</div>
+                        <a href="#" class="order-btn">Order Now</a>
+                    </div>
+                </div>
+
+                <!-- Special Card -->
+                <div class="col-lg-3 col-md-6 menu-item" data-aos="fade-up" data-aos-delay="900" data-category="pasta">
+                    <div class="menu-card text-center">
+                        <img src="images/veg-spaghetti.png" class="menu-img mt-2 mb-5">
+                        <h5>"Veg" Spaghetti Basilica Pesto Pasta</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="price">$4.50</div>
+                        <a href="#" class="order-btn">Order Now</a>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col-lg-3 col-md-6 menu-item" data-aos="fade-up" data-aos-delay="900" data-category="cold-corner">
+                    <div class="menu-card text-center">
+                        <img src="images/frappe.png" class="menu-img">
+                        <h5>Chocolate Hazelnut Frappe</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="price">$4.00</div>
+                        <a href="#" class="order-btn">Order Now</a>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="col-lg-3 col-md-6 menu-item" data-aos="fade-up" data-aos-delay="900" data-category="from-the-oven">
+                    <div class="menu-card text-center">
+                        <img src="images/panckae.png" class="menu-img">
+                        <h5>Nutella & Frappe Pancake</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="price">$3.66</div>
+                        <a href="#" class="order-btn">Order Now</a>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="col-lg-3 col-md-6 menu-item" data-aos="fade-up" data-aos-delay="900" data-category="dips">
+                    <div class="menu-card text-center">
+                        <img src="images/dip-2.png" class="menu-img">
+                        <h5>Spinach & Jalapeno Mayo</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="price">$3.40</div>
+                        <a href="#" class="order-btn">Order Now</a>
+                    </div>
+                </div>
+
+                <!-- Card 7 -->
+                <div class="col-lg-3 col-md-6 menu-item" data-aos="fade-up" data-aos-delay="900" data-category="non-veg-sides">
+                    <div class="menu-card text-center">
+                        <img src="images/chick-wings.png" class="menu-img">
+                        <h5>Chicken Wings With BBQ Sauce</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="price">$4.30</div>
+                        <a href="#" class="order-btn">Order Now</a>
+                    </div>
+                </div>
+
+                <!-- Card 8 -->
+                <div class="col-lg-3 col-md-6 menu-item" data-aos="fade-up" data-aos-delay="900" data-category="burgers">
+                    <div class="menu-card text-center">
+                        <img src="images/veg-burger.png" class="menu-img">
+                        <h5>Potato Dynamite</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="price">$4.00</div>
+                        <a href="#" class="order-btn">Order Now</a>
+                    </div>
+                </div>
+
+                <!-- Card 9 -->
+                <div class="col-lg-3 col-md-6 menu-item" data-aos="fade-up" data-aos-delay="900" data-category="burgers">
+                    <div class="menu-card text-center">
+                        <img src="images/veg-burger.png" class="menu-img">
+                        <h5>Boca Fuega</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="price">$5.00</div>
+                        <a href="#" class="order-btn">Order Now</a>
+                    </div>
+                </div>
+
+                <!-- Card 10 -->
+                <div class="col-lg-3 col-md-6 menu-item" data-aos="fade-up" data-aos-delay="900" data-category="burgers">
+                    <div class="menu-card text-center">
+                        <img src="images/veg-burger.png" class="menu-img">
+                        <h5>African Heat</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="price">$3.00</div>
+                        <a href="#" class="order-btn">Order Now</a>
+                    </div>
+                </div>
+
+                <!-- Card 11 -->
+                <div class="col-lg-3 col-md-6 menu-item" data-aos="fade-up" data-aos-delay="900" data-category="burgers">
+                    <div class="menu-card text-center">
+                        <img src="images/veg-burger.png" class="menu-img">
+                        <h5>The Hot Sauce Burgers</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="price">$4.40</div>
+                        <a href="#" class="order-btn">Order Now</a>
+                    </div>
+                </div>
+
+                <!-- Card 12 -->
+                <div class="col-lg-3 col-md-6 menu-item" data-aos="fade-up" data-aos-delay="900" data-category="burgers">
+                    <div class="menu-card text-center">
+                        <img src="images/veg-burger.png" class="menu-img">
+                        <h5>Chettinad Burger</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="price">$3.40</div>
+                        <a href="#" class="order-btn">Order Now</a>
+                    </div>
+                </div>
+
+                <!-- Card 13 -->
+                <div class="col-lg-3 col-md-6 menu-item" data-aos="fade-up" data-aos-delay="900" data-category="burgers">
+                    <div class="menu-card text-center">
+                        <img src="images/veg-burger.png" class="menu-img">
+                        <h5>Literally Smudged</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="price">$4.00</div>
+                        <a href="#" class="order-btn">Order Now</a>
+                    </div>
+                </div>
+
+                <!-- Card 14 -->
+                <div class="col-lg-3 col-md-6 menu-item" data-aos="fade-up" data-aos-delay="900" data-category="burgers">
+                    <div class="menu-card text-center">
+                        <img src="images/veg-burger.png" class="menu-img">
+                        <h5>SOUTH EAST ASIAN BURGER</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="price">$4.50</div>
+                        <a href="#" class="order-btn">Order Now</a>
+                    </div>
+                </div>
+
+                <!-- Card 15 -->
+                <div class="col-lg-3 col-md-6 menu-item" data-aos="fade-up" data-aos-delay="900" data-category="burgers">
+                    <div class="menu-card text-center">
+                        <img src="images/veg-burger.png" class="menu-img">
+                        <h5>FISH KISS CHIPS BURGER</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="price">$4.70</div>
+                        <a href="#" class="order-btn">Order Now</a>
+                    </div>
+                </div>
+
+                <!-- Card 16 -->
+                <div class="col-lg-3 col-md-6 menu-item" data-aos="fade-up" data-aos-delay="900" data-category="burgers">
+                    <div class="menu-card text-center">
+                        <img src="images/veg-burger.png" class="menu-img">
+                        <h5>THE CLASSIC AMERICAN</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="price">$4.00</div>
+                        <a href="#" class="order-btn">Order Now</a>
+                    </div>
+                </div>
+
+                <!-- Card 17 -->
+                <div class="col-lg-3 col-md-6 menu-item" data-aos="fade-up" data-aos-delay="900" data-category="burgers">
+                    <div class="menu-card text-center">
+                        <img src="images/veg-burger.png" class="menu-img">
+                        <h5>PESTO CAESER BURGER</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="price">$4.00</div>
+                        <a href="#" class="order-btn">Order Now</a>
+                    </div>
+                </div>
+
+                <!-- Card 18 -->
+                <div class="col-lg-3 col-md-6 menu-item" data-aos="fade-up" data-aos-delay="900" data-category="burgers">
+                    <div class="menu-card text-center">
+                        <img src="images/veg-burger.png" class="menu-img">
+                        <h5>A LOADED BEAST BY CHEF ANDAV</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="price">$4.00</div>
+                        <a href="#" class="order-btn">Order Now</a>
+                    </div>
+                </div>
+
+                <!-- Card 19 -->
+                <div class="col-lg-3 col-md-6 menu-item" data-aos="fade-up" data-aos-delay="900" data-category="burgers">
+                    <div class="menu-card text-center">
+                        <img src="images/veg-burger.png" class="menu-img">
+                        <h5>CHIMICHURI LAMB BURGER</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="price">$4.00</div>
+                        <a href="#" class="order-btn">Order Now</a>
+                    </div>
+                </div>
+
+                <!-- Card 20 -->
+                <div class="col-lg-3 col-md-6 menu-item" data-aos="fade-up" data-aos-delay="900" data-category="burgers">
+                    <div class="menu-card text-center">
+                        <img src="images/veg-burger.png" class="menu-img">
+                        <h5>UP BEET "BEETROOT BURGER"</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="price">$4.00</div>
+                        <a href="#" class="order-btn">Order Now</a>
+                    </div>
+                </div>
+
+                <!-- Card 21 -->
+                <div class="col-lg-3 col-md-6 menu-item" data-aos="fade-up" data-aos-delay="900" data-category="burgers">
+                    <div class="menu-card text-center">
+                        <img src="images/veg-burger.png" class="menu-img">
+                        <h5>COTTA CADO</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="price">$4.00</div>
+                        <a href="#" class="order-btn">Order Now</a>
+                    </div>
+                </div>
+
+                <!-- Card 22 -->
+                <div class="col-lg-3 col-md-6 menu-item" data-aos="fade-up" data-aos-delay="900" data-category="veg-sides">
+                    <div class="menu-card text-center">
+                        <img src="images/veg-burger.png" class="menu-img">
+                        <h5>IN HOUSE SPICE MIX FRIES <br> WITH SWEET CHILLI SAUCE</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="price">$4.00</div>
+                        <a href="#" class="order-btn">Order Now</a>
+                    </div>
+                </div>
+
+                <!-- Card 23 -->
+                <div class="col-lg-3 col-md-6 menu-item" data-aos="fade-up" data-aos-delay="900" data-category="veg-sides">
+                    <div class="menu-card text-center">
+                        <img src="images/veg-burger.png" class="menu-img">
+                        <h5>PARLSEY AND PARMESAN FRIES <br> WITH CHIPOTLE MAYO</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="price">$4.00</div>
+                        <a href="#" class="order-btn">Order Now</a>
+                    </div>
+                </div>
+
+                <!-- Card 24 -->
+                <div class="col-lg-3 col-md-6 menu-item" data-aos="fade-up" data-aos-delay="900" data-category="veg-sides">
+                    <div class="menu-card text-center">
+                        <img src="images/veg-burger.png" class="menu-img">
+                        <h5>PATATAS BRAVAS WITH IN HOUSE DRY HERBS AIOLI</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="price">$4.00</div>
+                        <a href="#" class="order-btn">Order Now</a>
+                    </div>
+                </div>
+
+                <!-- Card 25 -->
+                <div class="col-lg-3 col-md-6 menu-item" data-aos="fade-up" data-aos-delay="900" data-category="veg-sides">
+                    <div class="menu-card text-center">
+                        <img src="images/veg-burger.png" class="menu-img">
+                        <h5>PIRI PIRI FRIES CHIPOTLE MAYO</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="price">$4.00</div>
+                        <a href="#" class="order-btn">Order Now</a>
+                    </div>
+                </div>
+
+                <!-- Card 26 -->
+                <div class="col-lg-3 col-md-6 menu-item" data-aos="fade-up" data-aos-delay="900" data-category="veg-sides">
+                    <div class="menu-card text-center">
+                        <img src="images/veg-burger.png" class="menu-img">
+                        <h5>SALTED FRIES CHIPOTLE MAYO</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="price">$4.00</div>
+                        <a href="#" class="order-btn">Order Now</a>
+                    </div>
+                </div>
+
+                <!-- Card 27 -->
+                <div class="col-lg-3 col-md-6 menu-item" data-aos="fade-up" data-aos-delay="900" data-category="veg-sides">
+                    <div class="menu-card text-center">
+                        <img src="images/veg-burger.png" class="menu-img">
+                        <h5>MUSHROOM ARANCINI WITH IN HOUSE MAYO</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="price">$4.00</div>
+                        <a href="#" class="order-btn">Order Now</a>
+                    </div>
+                </div>
+
+                <!-- Card 28 -->
+                <div class="col-lg-3 col-md-6 menu-item" data-aos="fade-up" data-aos-delay="900" data-category="non-veg-sides">
+                    <div class="menu-card text-center">
+                        <img src="images/veg-burger.png" class="menu-img">
+                        <h5>CHICKEN CROUQETTES "5 PCS"</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="price">$4.00</div>
+                        <a href="#" class="order-btn">Order Now</a>
+                    </div>
+                </div>
+
+                <!-- Card 29 -->
+                <div class="col-lg-3 col-md-6 menu-item" data-aos="fade-up" data-aos-delay="900" data-category="non-veg-sides">
+                    <div class="menu-card text-center">
+                        <img src="images/veg-burger.png" class="menu-img">
+                        <h5>CHICKEN WINGS WITH BBQ SAUCE "4 PCS"</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="price">$4.00</div>
+                        <a href="#" class="order-btn">Order Now</a>
+                    </div>
+                </div>
+
+                <!-- Card 30 -->
+                <div class="col-lg-3 col-md-6 menu-item" data-aos="fade-up" data-aos-delay="900" data-category="non-veg-sides">
+                    <div class="menu-card text-center">
+                        <img src="images/veg-burger.png" class="menu-img">
+                        <h5>CHICKEN WINGS WITH IN HOUSE HOT SAUCE "4 PCS"</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="price">$4.00</div>
+                        <a href="#" class="order-btn">Order Now</a>
+                    </div>
+                </div>
+
+                <!-- Card 31 -->
+                <div class="col-lg-3 col-md-6 menu-item" data-aos="fade-up" data-aos-delay="900" data-category="non-veg-sides">
+                    <div class="menu-card text-center">
+                        <img src="images/veg-burger.png" class="menu-img">
+                        <h5>CHICKEN WINGS WITH IN HOUSE SPICE MIX GLAZE "4 PCS"</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="price">$4.00</div>
+                        <a href="#" class="order-btn">Order Now</a>
+                    </div>
+                </div>
+
+                <!-- Card 32 -->
+                <div class="col-lg-3 col-md-6 menu-item" data-aos="fade-up" data-aos-delay="900" data-category="non-veg-sides">
+                    <div class="menu-card text-center">
+                        <img src="images/veg-burger.png" class="menu-img">
+                        <h5>PIRI PIRI CHICKEN WINGS "4 PCS"</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="price">$4.00</div>
+                        <a href="#" class="order-btn">Order Now</a>
+                    </div>
+                </div>
+
+                <!-- Card 33 -->
+                <div class="col-lg-3 col-md-6 menu-item" data-aos="fade-up" data-aos-delay="900" data-category="pasta">
+                    <div class="menu-card text-center">
+                        <img src="images/veg-burger.png" class="menu-img">
+                        <h5>"Veg" Macaroni In Spicy Tomato And Bell Pepper Sauce</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="price">$4.00</div>
+                        <a href="#" class="order-btn">Order Now</a>
+                    </div>
+                </div>
+
+                <!-- Card 34 -->
+                <div class="col-lg-3 col-md-6 menu-item" data-aos="fade-up" data-aos-delay="900" data-category="pasta">
+                    <div class="menu-card text-center">
+                        <img src="images/non-veg-spaghetti.png" class="menu-img">
+                        <h5>"Non-Veg" Spaghetti Basilica Pesto Pasta</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="price">$4.00</div>
+                        <a href="#" class="order-btn">Order Now</a>
+                    </div>
+                </div>
+
+                <!-- Card 35 -->
+                <div class="col-lg-3 col-md-6 menu-item" data-aos="fade-up" data-aos-delay="900" data-category="pasta">
+                    <div class="menu-card text-center">
+                        <img src="images/veg-burger.png" class="menu-img">
+                        <h5>"Non-Veg" Macaroni In Spicy Tomato And Bell Pepper Sauce</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="price">$4.00</div>
+                        <a href="#" class="order-btn">Order Now</a>
+                    </div>
+                </div>
+
+                <!-- Card 36 -->
+                <div class="col-lg-3 col-md-6 menu-item" data-aos="fade-up" data-aos-delay="900" data-category="cold-corner">
+                    <div class="menu-card text-center">
+                        <img src="images/veg-burger.png" class="menu-img">
+                        <h5>BISCOFF SHAKE</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="price">$4.00</div>
+                        <a href="#" class="order-btn">Order Now</a>
+                    </div>
+                </div>
+
+                <!-- Card 36 -->
+                <div class="col-lg-3 col-md-6 menu-item" data-aos="fade-up" data-aos-delay="900" data-category="from-the-oven">
+                    <div class="menu-card text-center">
+                        <img src="images/veg-burger.png" class="menu-img">
+                        <h5>BISCOFF AND BANANA PANCAKE</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="price">$4.00</div>
+                        <a href="#" class="order-btn">Order Now</a>
+                    </div>
+                </div>
+
+                <!-- Card 37 -->
+                <div class="col-lg-3 col-md-6 menu-item" data-aos="fade-up" data-aos-delay="900" data-category="cold-corner">
+                    <div class="menu-card text-center">
+                        <img src="images/veg-burger.png" class="menu-img">
+                        <h5>CLASSIC COLD COFFEE</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="price">$4.00</div>
+                        <a href="#" class="order-btn">Order Now</a>
+                    </div>
+                </div>
+
+                <!-- Card 23 -->
+                <div class="col-lg-3 col-md-6 menu-item" data-aos="fade-up" data-aos-delay="900" data-category="cold-corner">
+                    <div class="menu-card text-center">
+                        <img src="images/veg-burger.png" class="menu-img">
+                        <h5>MIX BERRIES YOGURT SMOOTHIE</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="price">$4.00</div>
+                        <a href="#" class="order-btn">Order Now</a>
+                    </div>
+                </div>
+
+                <!-- Card 24 -->
+                <div class="col-lg-3 col-md-6 menu-item" data-aos="fade-up" data-aos-delay="900" data-category="cold-corner">
+                    <div class="menu-card text-center">
+                        <img src="images/veg-burger.png" class="menu-img">
+                        <h5>PEANUT BUTTER AND BROWNIE SMOOTHIE</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="price">$4.00</div>
+                        <a href="#" class="order-btn">Order Now</a>
+                    </div>
+                </div>
+
+                <!-- Card 25 -->
+                <div class="col-lg-3 col-md-6 menu-item" data-aos="fade-up" data-aos-delay="900" data-category="cold-corner">
+                    <div class="menu-card text-center">
+                        <img src="images/veg-burger.png" class="menu-img">
+                        <h5>SPRITE "300 ML"</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="price">$4.00</div>
+                        <a href="#" class="order-btn">Order Now</a>
+                    </div>
+                </div>
+
+                <!-- Card 26 -->
+                <div class="col-lg-3 col-md-6 menu-item" data-aos="fade-up" data-aos-delay="900" data-category="cold-corner">
+                    <div class="menu-card text-center">
+                        <img src="images/veg-burger.png" class="menu-img">
+                        <h5>COCA COLA "30O ML"</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="price">$4.00</div>
+                        <a href="#" class="order-btn">Order Now</a>
+                    </div>
+                </div>
+
+                <!-- Card 27 -->
+                <div class="col-lg-3 col-md-6 menu-item" data-aos="fade-up" data-aos-delay="900" data-category="dips">
+                    <div class="menu-card text-center">
+                        <img src="images/veg-burger.png" class="menu-img">
+                        <h5>ASIAN SRIRACHA SAUCE</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="price">$4.00</div>
+                        <a href="#" class="order-btn">Order Now</a>
+                    </div>
+                </div>
+
+                <!-- Card 25 -->
+                <div class="col-lg-3 col-md-6 menu-item" data-aos="fade-up" data-aos-delay="900" data-category="dips">
+                    <div class="menu-card text-center">
+                        <img src="images/veg-burger.png" class="menu-img">
+                        <h5>BELL PEPPER AIOLI</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="price">$4.00</div>
+                        <a href="#" class="order-btn">Order Now</a>
+                    </div>
+                </div>
+
+                <!-- Card 25 -->
+                <div class="col-lg-3 col-md-6 menu-item" data-aos="fade-up" data-aos-delay="900" data-category="dips">
+                    <div class="menu-card text-center">
+                        <img src="images/veg-burger.png" class="menu-img">
+                        <h5>CHIPOTLE MAYO</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="price">$4.00</div>
+                        <a href="#" class="order-btn">Order Now</a>
+                    </div>
+                </div>
+
+                <!-- Card 25 -->
+                <div class="col-lg-3 col-md-6 menu-item" data-aos="fade-up" data-aos-delay="900" data-category="dips">
+                    <div class="menu-card text-center">
+                        <img src="images/veg-burger.png" class="menu-img">
+                        <h5>CONFIT GARLIC AIOLI</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="price">$4.00</div>
+                        <a href="#" class="order-btn">Order Now</a>
+                    </div>
+                </div>
+
+                <!-- Card 26 -->
+                <div class="col-lg-3 col-md-6 menu-item" data-aos="fade-up" data-aos-delay="900" data-category="dips">
+                    <div class="menu-card text-center">
+                        <img src="images/veg-burger.png" class="menu-img">
+                        <h5>PIRI PIRI MAYO</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="price">$4.00</div>
+                        <a href="#" class="order-btn">Order Now</a>
+                    </div>
+                </div>
+
+                <!-- Card 27 -->
+                <div class="col-lg-3 col-md-6 menu-item" data-aos="fade-up" data-aos-delay="900" data-category="dips">
+                    <div class="menu-card text-center">
+                        <img src="images/veg-burger.png" class="menu-img">
+                        <h5>SPANISH BRAVAS SAUCE</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="price">$4.00</div>
+                        <a href="#" class="order-btn">Order Now</a>
+                    </div>
+                </div>
+
+                <!-- Card 25 -->
+                <div class="col-lg-3 col-md-6 menu-item" data-aos="fade-up" data-aos-delay="900" data-category="dips">
+                    <div class="menu-card text-center">
+                        <img src="images/veg-burger.png" class="menu-img">
+                        <h5>SPICY BBQ IN HOUSE SAUCE</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="price">$4.00</div>
+                        <a href="#" class="order-btn">Order Now</a>
+                    </div>
+                </div>
+
+                <!-- Card 25 -->
+                <div class="col-lg-3 col-md-6 menu-item" data-aos="fade-up" data-aos-delay="900" data-category="dips">
+                    <div class="menu-card text-center">
+                        <img src="images/veg-burger.png" class="menu-img">
+                        <h5>MADRAS CURRY MAYO</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="price">$4.00</div>
+                        <a href="#" class="order-btn">Order Now</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="footer-section foot-back">
+        <div class="container">
+
+            <div class="row g-5">
+
+                <!-- LEFT COLUMN -->
+                <div class="col-lg-4">
+
+                    <a class="navbar-brand" href="index.html">
+                        <span class="brand-logo"><img src="images/smudge-logo.png" alt="" class="img-fluid"></span>
+                    </a>
+
+                    <p class="footer-text" data-aos="fade-up" data-aos-delay="200">
+                        We’re committed to delivering exceptional care with compassion, trust,
+                        and integrity. From your first visit to long-term support, your health and
+                        comfort are always our priority.
+                    </p>
+
+                    <h6 class="mt-4 mb-2 footer-heading" data-aos="fade-right" data-aos-delay="900">Visit Us</h6>
+                    <p class="footer-text" data-aos="fade-right" data-aos-delay="900">
+                        123 Wellness Avenue, Suite<br>
+                        405, New York, NY 10016<br>
+                        United States
+                    </p>
+
+
+                </div>
+
+                <!-- MIDDLE COLUMN -->
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="row mb-2">
+                        <div class="col-5">
+                            <h6 class="footer-heading" data-aos="fade-up" data-aos-delay="200">Main Pages</h6>
+                        </div>
+                        <div class="col-7">
+                            <h6 class="footer-heading" data-aos="fade-up" data-aos-delay="200">Opening Hours</h6>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <!-- Main Pages Links -->
+                        <div class="col-5">
+                            <ul class="footer-links" data-aos="fade-up" data-aos-delay="200">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="menu.html">Menu</a></li>
+                                <!-- <li><a href="blogs.php">Blogs</a></li> -->
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Services Links -->
+                        <div class="col-7">
+                            <ul class="footer-links" data-aos="fade-up" data-aos-delay="200">
+                                <li><a href="javascript:void(0)">Monday to Friday <br> 10:00 AM to 12:00 PM</a></li>
+                                <li><a href="javascript:void(0)">Saturday to Sunday <br> 10:00 AM to 10:00 PM</a></li>
+                                <!-- <li><a href="financial-advisory.php">Financial Advisory</a></li> -->
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- RIGHT COLUMN -->
+                <div class="col-lg-4 col-md-6">
+                    <h6 class="footer-heading mb-3" data-aos="fade-up" data-aos-delay="200">Newsletter</h6>
+                    <p class="footer-text" data-aos="fade-up" data-aos-delay="200">
+                        Let’s transform your vision into results and discuss your vision with us.
+                    </p>
+
+                    <div class="newsletter-box mb-2" data-aos="fade-up" data-aos-delay="200">
+                        <input type="email" class="form-control newsletter-input"
+                            placeholder="Enter your email address">
+                    </div>
+
+                    <button class="subscribe-btn" data-aos="fade-up" data-aos-delay="200">
+                        Subscribe <i class="bi bi-arrow-up-right"></i>
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- FLOATING SCOOTER ANIMATION -->
+            <div class="footer-animated-images">
+
+                <!-- Scooter + Light Group -->
+                <div class="scooter-wrapper">
+
+                    <!-- Delivery Boy Scooter -->
+                    <img src="images/deli-boy.webp" alt="Delivery Boy Scooter" class="footer-boy">
+
+                    <!-- Headlight Light SVG -->
+                    <img src="images/light.svg" alt="Scooter Light" class="scooter-light">
+
+                </div>
+
+            </div>
+
+
+
+            <hr class="footer-divider mt-4">
+
+            <!-- BOTTOM ROW -->
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center pt-3">
+
+                <p class="footer-copy mb-3 mb-md-0">
+                    &copy; 2025 Smudge. All rights reserved. Designed & Developed
+                    By <a href="https://brandingwaale.com/" class="foot-url">Brandingwaale
+                        Webtech.</a>
+                </p>
+
+                <div class="footer-social d-flex gap-3">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Custom JS -->
+    <script src="javascript/script.js"></script>
+
+</body>
+
+</html>
