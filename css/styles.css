@@ -66,8 +66,9 @@ section {
   left: 0;
   width: 100%;
   z-index: 999;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(12px);
+  background: #ED2126;
+  /* background: rgba(255, 255, 255, 0.1); */
+  /* backdrop-filter: blur(12px); */
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
   transition: background 0.35s ease, backdrop-filter 0.35s ease,
     padding 0.3s ease;
@@ -108,11 +109,11 @@ section {
 
 .nav-links {
   display: flex;
-  gap: 2rem;
+  gap: 2.3rem;
 }
 
 .nav-link {
-  color: var(--smudge-red);
+  color: var(--card);
   font-weight: 600;
   font-size: 1.4rem;
   text-decoration: none;
@@ -132,7 +133,7 @@ section {
   left: 0;
   width: 0;
   height: 2px;
-  background: var(--smudge-red);
+  background: var(--card);
   transition: width 0.3s ease;
 }
 
@@ -141,14 +142,14 @@ section {
 }
 
 .phone-number {
-  color: var(--smudge-red);
+  color: var(--card);
   font-size: 1.4rem;
   font-weight: 600;
   white-space: nowrap;
 }
 
 .btn-order-header {
-  background: var(--smudge-red);
+  background: black;
   color: var(--card);
   border: none;
   padding: 0.6rem 1rem;
@@ -497,13 +498,10 @@ section {
 
 .menu-section {
   padding: 80px 0;
-  background: linear-gradient(to right, #fff8ed, #fffdf9);
-  /* font-family: "Poppins", sans-serif; */
+  background: white;
 }
 
-/* SECTION TITLE */
 .menu-title {
-  /* text-align: center; */
   font-size: 38px;
   font-weight: 700;
   margin-bottom: 50px;
@@ -514,19 +512,10 @@ section {
   color: var(--smudge-red);
 }
 
-/* ================================
-   MENU CARD
-================================ */
-
-/* ================================
-   MENU CARD
-================================ */
-
-.menu-card {
+/* .menu-card {
   background: #ffffff;
   border-radius: 18px;
   padding: 22px 20px 22px;
-  /* removed bottom gap for absolute button */
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
   height: 100%;
   position: relative;
@@ -540,16 +529,11 @@ section {
   background: var(--gradient);
 }
 
-/* SAME COLOR FOR ALL CARDS ON HOVER */
 .menu-card:hover h5,
 .menu-card:hover p,
 .menu-card:hover .price {
   color: #fff;
 }
-
-/* ================================
-   IMAGE
-================================ */
 
 .menu-img {
   width: 100%;
@@ -565,9 +549,6 @@ section {
   transform: scale(1.12) rotate(2deg);
 }
 
-/* ================================
-   TEXT
-================================ */
 
 .menu-card h5 {
   font-weight: 600;
@@ -586,12 +567,7 @@ section {
   font-weight: 700;
   color: var(--smudge-red);
   margin-bottom: 12px;
-  /* ✅ space for button */
 }
-
-/* ================================
-   ORDER BUTTON (BELOW PRICE)
-================================ */
 
 .order-btn {
   display: inline-block;
@@ -619,37 +595,87 @@ section {
 .order-btn:hover {
   background: #000;
   color: #fff;
+} */
+
+.menu-item {
+  position: relative;
+  padding: 0px;
+  transition: all 0.4s ease;
 }
 
-/* ================================
-   REMOVE SPECIAL COLOR DIFFERENCE
-================================ */
-
-.menu-card.special {
-  background: #ffffff;
-  /* now SAME as others */
-  color: inherit;
+.menu-img {
+  position: relative;
+  border-radius: 22px;
+  overflow: hidden;
 }
 
-.menu-card.special h5,
-.menu-card.special p,
-.menu-card.special .price {
-  color: inherit;
+/* IMAGE – stays untouched */
+.menu-img img {
+  width: 100%;
+  display: block;
 }
 
-/* ================================
-   RESPONSIVE
-================================ */
+/* OVERLAY – APPEARS FIRST */
+.menu-img-overlay {
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  background:
+    linear-gradient(
+      to top,
+      rgba(220, 38, 38, 0.95) 0%,
+      rgba(220, 38, 38, 0.65) 35%,
+      rgba(0, 0, 0, 0.45) 65%,
+      rgba(0, 0, 0, 0.65) 100%
+    );
 
-@media (max-width: 576px) {
-  .menu-card {
-    padding: 20px;
-  }
-
-  .price {
-    font-size: 18px;
-  }
+  opacity: 0;
+  transition: opacity 0.35s ease;
 }
+
+/* TEXT WRAPPER */
+.menu-overlay-content {
+  position: absolute;
+  bottom: 26px;
+  width: 100%;
+  text-align: center;
+
+  opacity: 0;
+  transform: translateY(14px);
+  transition:
+    opacity 0.35s ease,
+    transform 0.35s ease;
+  transition-delay: 0.15s; /* KEY: text comes AFTER overlay */
+}
+
+/* SHOW OVERLAY */
+.menu-item:hover .menu-img-overlay {
+  opacity: 1;
+}
+
+/* FADE-UP TEXT */
+.menu-item:hover .menu-overlay-content {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* TEXT STYLE */
+.menu-overlay-content h4 {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: #fff;
+  margin-bottom: 6px;
+}
+
+.menu-overlay-content p {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: rgba(255,255,255,0.9);
+}
+
+
 
 /* Deals Section */
 
@@ -678,7 +704,7 @@ section {
 /* Deal Wrapper */
 .hot-deals-wrapper {
   position: relative;
-  min-height: ; /* Adjust once and it stays stable */
+  /* min-height: ; */
   /* display: flex; */
   align-items: center;
   justify-content: center;
@@ -806,7 +832,7 @@ section {
   position: relative;
   z-index: 5;
   text-align: center;
-  padding-top: ;
+  /* padding-top: ; */
   /* margin-bottom: 0px; */
 }
 
@@ -1083,17 +1109,6 @@ section {
   color: #fff;
 }
 
-@media (max-width: 768px) {
-  .cta-form .form-control,
-  .cta-form .btn {
-    border-radius: 50px;
-    margin-bottom: 10px;
-  }
-  .cta-form {
-    flex-direction: column;
-  }
-}
-
 .offer-grid-section {
   background: #fceed1;
   padding: 80px 40px;
@@ -1109,8 +1124,7 @@ section {
   padding: 35px;
   overflow: hidden;
   display: flex;
-  justify-content: space-between;
-  /* align-items: center; */
+  /* justify-content: space-between; */
 }
 
 /* Background Colors */
@@ -1121,8 +1135,9 @@ section {
 }
 
 .card-yellow {
-  background: #ffb21e;
-  color: #fff;
+  /* background: #ffb21e; */
+  background: url("../images/offer-3-img.jpg") center/cover no-repeat;
+  color: var(--dark);
 }
 
 .card-dark {
@@ -1241,6 +1256,8 @@ section {
   font-size: 20px;
   line-height: 1.2;
   color: #b9bccf;
+  text-align: justify;
+  max-width: 310px;
 }
 
 .footer-heading {
@@ -1628,10 +1645,95 @@ section {
   border-color: var(--smudge-red);
 }
 
-.menu-card.show {
+.menu-page-card.show {
   opacity: 1;
   transform: translateY(0);
 }
+
+.menu-page-card {
+    background: #fff;
+    border-radius: 18px;
+    padding: 0px 40px;
+    /* min-height: 260px; */
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* Card hover */
+.menu-page-card:hover {
+    transform: translateY(-6px);
+    background: var(--gradient);
+}
+
+/* Title animation on card hover */
+.menu-page-card:hover .menu-item-title {
+    color: #fff;                /* or any highlight color */
+    letter-spacing: 1px;
+    transform: translateX(6px);
+}
+
+/* Smooth animation */
+.menu-item-title {
+    transition: all 0.3s ease;
+}
+
+
+/* ===============================
+   LEFT CONTENT
+================================ */
+.menu-content {
+    max-width: 55%;
+}
+
+.menu-item-title {
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 12px;
+    color: var(--smudge-red);
+}
+
+.menu-item-desc {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #555;
+}
+
+/* ===============================
+   RIGHT IMAGE
+================================ */
+.menu-image {
+    width: 50%;
+    text-align: right;
+}
+
+.menu-image img {
+    max-width: 340px;
+    width: 100%;
+    filter: drop-shadow(0 20px 25px rgba(0, 0, 0, 0.25));
+    transition: transform 0.4s ease;
+}
+
+.menu-page-card:hover .menu-image img {
+    transform: scale(1.08) rotate(-2deg);
+}
+
+/* ===============================
+   ALTERNATE LAYOUT
+================================ */
+.menu-page-card.reverse {
+    flex-direction: row-reverse;
+}
+
+.menu-page-card.reverse .menu-image {
+    text-align: left;
+}
+
+.menu-page-card.reverse .menu-content {
+    text-align: right;
+}
+
 
 /* ------------------------------------CONTACT SECTION------------------------------------ */
 

@@ -245,27 +245,16 @@ const menuItems = document.querySelectorAll(".menu-item");
 
 filterBtns.forEach((btn) => {
   btn.addEventListener("click", () => {
-    // Active button highlight
     filterBtns.forEach((b) => b.classList.remove("active"));
     btn.classList.add("active");
 
-    let category = btn.getAttribute("data-category");
+    const category = btn.dataset.category;
 
-    // Filter items
     menuItems.forEach((item) => {
-      item.style.display = "none";
-      item.querySelector(".menu-card").classList.remove("show");
-
-      if (category === "all" || item.dataset.category === category) {
-        setTimeout(() => {
-          item.style.display = "block";
-
-          // Smooth fade animation
-          setTimeout(() => {
-            item.querySelector(".menu-card").classList.add("show");
-          }, 50);
-        }, 100);
-      }
+      item.style.display =
+        category === "all" || item.dataset.category === category
+          ? "block"
+          : "none";
     });
   });
 });
