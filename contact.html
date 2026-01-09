@@ -11,7 +11,7 @@
         rel="stylesheet">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
@@ -34,47 +34,28 @@
                 <a class="navbar-brand" href="index.html">
                     <span class="brand-logo"><img src="images/smudge-logo.png" alt="" class="img-fluid"></span>
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    style="border: none;">
+                    <img src="images/ham.png" alt="" class="img-fluid">
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <div class="ms-auto d-flex align-items-center gap-5 flex-wrap">
+                    <div class="ms-auto d-flex align-items-center gap-5 flex-wrap navbar-content">
                         <div class="nav-links">
                             <a href="index.html" class="nav-link">Home</a>
                             <a href="about.html" class="nav-link">About</a>
                             <a href="menu.html" class="nav-link">Menu</a>
-                            <!-- <a href="#deals" class="nav-link">Hot Deals</a> -->
                             <a href="contact.html" class="nav-link">Contact Us</a>
                         </div>
                         <div class="phone-section">
-                            <span class="phone-number"><text>Call Us On</text> +91 99583 65894</span>
+                            <span class="phone-number">
+                                <text>Call Us On</text> +91 99583 65894
+                            </span>
                         </div>
-                        <!-- <button class="btn-order-header">Order Now</button> -->
                     </div>
                 </div>
             </div>
         </nav>
     </header>
-
-    <!-- <section class="menu-hero">
-        <video class="about-hero-video" autoplay muted loop playsinline>
-            <source src="videos/menu-video.mp4" type="video/mp4">
-        </video>
-
-        <div class="menu-hero-overlay"></div>
-
-        <div class="about-hero-content text-center">
-            <h1 class="about-title" data-aos="fade-up">Our Menu</h1>
-
-            <nav aria-label="breadcrumb" data-aos="fade-up" data-aos-delay="150">
-                <ol class="breadcrumb justify-content-center">
-                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Menu</li>
-                </ol>
-            </nav>
-        </div>
-
-    </section> -->
 
     <section class="contact-hero-section">
         <div class="contact-overlay"></div>
@@ -92,19 +73,12 @@
 
     </section>
 
-    <section class="contact-section" data-aos="">
+    <section class="contact-section">
         <div class="container">
             <div class="row g-4">
-
-                <!-- LEFT FORM -->
                 <div class="col-lg-7">
                     <div class="contact-form-box p-4" data-aos="fade-up">
                         <h3 class="contact-title mb-3">GET IN TOUCH</h3>
-                        <!-- <p class="section-subtext mb-4">
-                            Star asset slice scale outline plugin hand overflow. Asset vector
-                            variant undo select hand flatten. Ipsum rectangle image edit
-                            background select.
-                        </p> -->
 
                         <form id="contactForm">
 
@@ -137,7 +111,6 @@
                     </div>
                 </div>
 
-                <!-- RIGHT CONTACT INFO CARDS -->
                 <div class="col-lg-5">
                     <div class="info-card p-4 mb-3" data-aos="fade-left">
                         <div class="icon mb-2"><i class="bi bi-house-door"></i></div>
@@ -186,7 +159,7 @@
                 <!-- LEFT COLUMN -->
                 <div class="col-lg-4">
 
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand d-lg-block d-flex justify-content-center" href="index.html">
                         <span class="brand-logo"><img src="images/smudge-logo.png" alt="" class="img-fluid"></span>
                     </a>
 
@@ -199,7 +172,7 @@
 
                     <!-- <h6 class="mt-4 mb-2 footer-heading" data-aos="fade-right" data-aos-delay="900">Visit Us</h6> -->
                     <h6 class="footer-text mb-lg-5" data-aos="fade-right" data-aos-delay="900">
-                       <i class="bi bi-geo-alt" style="color: red;"></i> DELHI
+                        <i class="bi bi-geo-alt" style="color: red;"></i> DELHI
                     </h6>
 
 
@@ -303,13 +276,10 @@
         </div>
     </footer>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-
-    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-    <!-- Custom JS -->
     <script src="javascript/script.js"></script>
 
-</b
+</body>
+
+</html>

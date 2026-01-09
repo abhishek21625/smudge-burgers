@@ -11,13 +11,12 @@
         rel="stylesheet">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- AOS (Animate On Scroll) -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-
 
     <!-- Font Awesome for Social Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -34,32 +33,31 @@
                 <a class="navbar-brand" href="index.html">
                     <span class="brand-logo"><img src="images/smudge-logo.png" alt="" class="img-fluid"></span>
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    style="border: none;">
+                    <img src="images/ham.png" alt="" class="img-fluid">
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <div class="ms-auto d-flex align-items-center gap-5 flex-wrap">
+                    <div class="ms-auto d-flex align-items-center gap-5 flex-wrap navbar-content">
                         <div class="nav-links">
                             <a href="index.html" class="nav-link">Home</a>
                             <a href="about.html" class="nav-link">About</a>
                             <a href="menu.html" class="nav-link">Menu</a>
-                            <!-- <a href="#deals" class="nav-link">Hot Deals</a> -->
                             <a href="contact.html" class="nav-link">Contact Us</a>
                         </div>
                         <div class="phone-section">
-                            <span class="phone-number"><text>Call Us On</text> +91 99583 65894</span>
+                            <span class="phone-number">
+                                <text>Call Us On</text> +91 99583 65894
+                            </span>
                         </div>
-                        <!-- <button class="btn-order-header">Order Now</button> -->
                     </div>
                 </div>
             </div>
         </nav>
     </header>
 
-    <!-- Hero Section -->
     <section class="hero-section">
-
-        <div class="ps-5">
+        <div class="ps-lg-5 pe-lg-0 ps-3 pe-3">
             <div class="row align-items-center">
                 <div class="col-lg-5" data-aos="fade-right">
                     <span class="hero-badge">Taste the Future of Burgers</span>
@@ -67,7 +65,7 @@
                     <p class="hero-desc">A rich, flame-grilled masterpiece infused with Indian makhani flavors, layered
                         with juicy chicken, double cheddar melt, crisp veggies and our signature secret sauce crafted
                         for true burger lovers.</p>
-                    <div class="d-flex gap-3 mt-3">
+                    <div class="d-flex gap-3 mt-3 mb-4 mb-lg-0">
                         <!-- <button class="primary-btn">Order On:- +91 99583 65894</button> -->
                         <a href="menu.html" class="btn btn-outline-light rounded-4 px-4 fs-5">Explore Our Menu</a>
                     </div>
@@ -91,111 +89,18 @@
                     Explore <span>Menu</span>
                 </h2>
 
-                <a href="menu.html" class="btn primary-btn" data-aos="fade-left" data-aos-delay="100">View All Items</a>
+                <a href="menu.html" class="btn primary-btn" data-aos="fade-left" data-aos-delay="100">
+                    View All Items
+                </a>
+
             </div>
 
-            <!-- <div class="col-lg-3 col-md-6" data-aos="fade-up">
-                    <div class="menu-card text-center">
-                        <img src="https://pngimg.com/uploads/burger_sandwich/burger_sandwich_PNG4160.png"
-                            class="menu-img">
-                        <h5>OG Murgh Makhani</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur.</p>
-                        <div class="price">$3.66</div>
-                        <a href="#" class="order-btn">Order Now</a>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                    <div class="menu-card text-center">
-                        <img src="images/fries.png" class="menu-img">
-                        <h5>House Spice Mix Fries</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur.</p>
-                        <div class="price">$1.45</div>
-                        <a href="#" class="order-btn">Order Now</a>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6" data-aos="zoom-in">
-                    <div class="menu-card text-center">
-                        <img src="images/veg-spaghetti.png" class="menu-img">
-                        <h5>Spaghetti Basilica Pesto Pasta</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur.</p>
-                        <div class="price">$4.50</div>
-                        <a href="#" class="order-btn">Order Now</a>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                    <div class="menu-card text-center">
-                        <img src="images/frappe.png" class="menu-img">
-                        <h5>Chocolate Hazelnut Frappe</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur.</p>
-                        <div class="price">$4.00</div>
-                        <a href="#" class="order-btn">Order Now</a>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6" data-aos="fade-up">
-                    <div class="menu-card text-center">
-                        <img src="images/panckae.png" class="menu-img">
-                        <h5>Nutella & Frappe Pancake</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur.</p>
-                        <div class="price">$3.66</div>
-                        <a href="#" class="order-btn">Order Now</a>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                    <div class="menu-card text-center">
-                        <img src="images/dip-2.png" class="menu-img">
-                        <h5>Spinach & Jalapeno Mayo</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur.</p>
-                        <div class="price">$3.40</div>
-                        <a href="#" class="order-btn">Order Now</a>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                    <div class="menu-card text-center">
-                        <img src="images/chick-wings.png" class="menu-img">
-                        <h5>Chicken Wings With BBQ Sauce</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur.</p>
-                        <div class="price">$4.30</div>
-                        <a href="#" class="order-btn">Order Now</a>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                    <div class="menu-card text-center">
-                        <img src="images/veg-burger.png" class="menu-img">
-                        <h5>Potato Dynamite</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur.</p>
-                        <div class="price">$4.00</div>
-                        <a href="#" class="order-btn">Order Now</a>
-                    </div>
-                </div> -->
-
-            <div class="row g-5">
-
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="menu-item">
-                        <div class="menu-img">
-                            <img src="images/burgers/beet-root-burger.png" alt="BEET ROOT BURGER">
-                        </div>
-
-                        <div class="menu-img-overlay">
-                            <div class="menu-overlay-content">
-                                <h4>BEETROOT BURGER</h4>
-                                <p>CHEESE • LETTUCE • PICKLES</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="row g-3">
 
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="menu-item" data-aos="fade-up">
                         <div class="menu-img">
-                            <img src="images/burgers/dynamite-veg-burger.png" alt="">
+                            <img src="images/burgers/dynamite-veg-burger.png" alt="BEET ROOT BURGER">
                         </div>
 
                         <div class="menu-img-overlay">
@@ -209,40 +114,34 @@
 
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="menu-item" data-aos="fade-up">
+                        <div class="menu-img">
+                            <img src="images/burgers/mushroom-burger.png" alt="">
+                        </div>
+
+                        <div class="menu-img-overlay">
+                            <div class="menu-overlay-content">
+                                <h4>TRUFFLE MUSHROOM HARMONY</h4>
+                                <p>CHEESE • MUSHROOM • PICKLES</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="menu-item" data-aos="fade-up">
                         <!-- <span class="spec spec-top-left">Chipotle Sauce</span>
                         <span class="spec spec-top-right">Cheddar Cheese</span>
                         <span class="spec spec-bottom-left">Tomato Slices</span>
                         <span class="spec spec-bottom-right">Crispy Onions</span> -->
 
                         <div class="menu-img">
-                            <img src="images/burgers/mushroom-burger.png" alt="Burger">
+                            <img src="images/burgers/korean-fried-chicken-burger.png" alt="Burger">
                         </div>
 
                         <div class="menu-img-overlay">
                             <div class="menu-overlay-content">
-                                <h4>TRUFFLE MUSHROOM HARMONY</h4>
-                                <p>CHEESE • LETTUCE • PICKLES</p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="menu-item" data-aos="fade-up">
-                        <!-- <span class="spec spec-top-left">BBQ Sauce</span>
-                        <span class="spec spec-top-right">Swiss Cheese</span>
-                        <span class="spec spec-bottom-left">Pickles</span>
-                        <span class="spec spec-bottom-right">Grilled Onions</span> -->
-
-                        <div class="menu-img">
-                            <img src="images/burgers/beet-root-burger.png" alt="Burger">
-                        </div>
-
-                        <div class="menu-img-overlay">
-                            <div class="menu-overlay-content">
-                                <h4>ROYAL COTTAGE CHEESE MELT</h4>
-                                <p>CHEESE • LETTUCE • PICKLES</p>
+                                <h4>KOREAN FRIED CHICKEN BURGER</h4>
+                                <p>CHICKEN • VEGGIES • PICKLES</p>
                             </div>
                         </div>
 
@@ -263,7 +162,7 @@
                         <div class="menu-img-overlay">
                             <div class="menu-overlay-content">
                                 <h4>CHEDDAR LAMB SMASH</h4>
-                                <p>CHEESE • LETTUCE • PICKLES</p>
+                                <p>CHEESE • LAMB • PICKLES</p>
                             </div>
                         </div>
 
@@ -278,13 +177,13 @@
                         <span class="spec spec-bottom-right">Grilled Onions</span> -->
 
                         <div class="menu-img">
-                            <img src="images/burgers/literally-smudge.png" alt="Burger">
+                            <img src="images/burgers/salted-fries.png" alt="">
                         </div>
 
                         <div class="menu-img-overlay">
                             <div class="menu-overlay-content">
-                                <h4>LITERALLY SMUDGED BURGER</h4>
-                                <p>CHEESE • LETTUCE • PICKLES</p>
+                                <h4>salted fries</h4>
+                                <p>SALTED</p>
                             </div>
                         </div>
 
@@ -299,13 +198,13 @@
                         <span class="spec spec-bottom-right">Grilled Onions</span> -->
 
                         <div class="menu-img">
-                            <img src="images/burgers/korean-fried-chicken-burger.png" alt="Burger">
+                            <img src="images/burgers/piri-piri-fries.png" alt="">
                         </div>
 
                         <div class="menu-img-overlay">
                             <div class="menu-overlay-content">
-                                <h4>KOERAN FRIED CHICKEN BURGER</h4>
-                                <p>CHEESE • LETTUCE • PICKLES</p>
+                                <h4>PIRI PIRI FRIES</h4>
+                                <p>PIRI PIRI</p>
                             </div>
                         </div>
 
@@ -320,13 +219,13 @@
                         <span class="spec spec-bottom-right">Grilled Onions</span> -->
 
                         <div class="menu-img">
-                            <img src="images/burgers/african-heat.png" alt="Burger">
+                            <img src="images/burgers/spice-mix-fries.png" alt="">
                         </div>
 
                         <div class="menu-img-overlay">
                             <div class="menu-overlay-content">
-                                <h4>AFRICAN HEAT BURGER</h4>
-                                <p>CHEESE • LETTUCE • PICKLES</p>
+                                <h4>SPICE MIX FRIES</h4>
+                                <p>SPICE MIX</p>
                             </div>
                         </div>
 
@@ -341,13 +240,13 @@
                         <span class="spec spec-bottom-right">Grilled Onions</span> -->
 
                         <div class="menu-img">
-                            <img src="images/burgers/boca-fuego.png" alt="Burger">
+                            <img src="images/burgers/chick-popcorn.png" alt="">
                         </div>
 
                         <div class="menu-img-overlay">
                             <div class="menu-overlay-content">
-                                <h4>BOCA boca-fuego</h4>
-                                <p>CHEESE • LETTUCE • PICKLES</p>
+                                <h4>CHICKEN POPCORN</h4>
+                                <p>FRIED CHICKEN</p>
                             </div>
                         </div>
 
@@ -362,13 +261,13 @@
                         <span class="spec spec-bottom-right">Grilled Onions</span> -->
 
                         <div class="menu-img">
-                            <img src="images/burgers/og-murgh-makhani.png" alt="Burger">
+                            <img src="images/burgers/bbq-wings.png" alt="Burger">
                         </div>
 
                         <div class="menu-img-overlay">
                             <div class="menu-overlay-content">
-                                <h4>OG MURGH MAKHANI</h4>
-                                <p>CHEESE • LETTUCE • PICKLES</p>
+                                <h4>BBQ WINGS</h4>
+                                <p>BARBEQUE CHICKEN WINGS</p>
                             </div>
                         </div>
 
@@ -383,13 +282,13 @@
                         <span class="spec spec-bottom-right">Grilled Onions</span> -->
 
                         <div class="menu-img">
-                            <img src="images/burgers/a-loaded-beast.png" alt="Burger">
+                            <img src="images/burgers/spice-mix-glaze.png" alt="Burger">
                         </div>
 
                         <div class="menu-img-overlay">
                             <div class="menu-overlay-content">
-                                <h4>A LOADED BEAST</h4>
-                                <p>CHEESE • LETTUCE • PICKLES</p>
+                                <h4>CHICKEN WINGS WITH SMOKY SPICE MIX GLAZE</h4>
+                                <p>SPICE MIX GLAZE CHICKEN</p>
                             </div>
                         </div>
 
@@ -404,13 +303,34 @@
                         <span class="spec spec-bottom-right">Grilled Onions</span> -->
 
                         <div class="menu-img">
-                            <img src="images/burgers/chimichuri.png" alt="Burger">
+                            <img src="images/burgers/peanut-brown-smoothie.png" alt="Burger">
                         </div>
 
                         <div class="menu-img-overlay">
                             <div class="menu-overlay-content">
-                                <h4>CHIMICHURI BURGER</h4>
-                                <p>CHEESE • LETTUCE • PICKLES</p>
+                                <h4>PEANUT & BROWNIE SMOOTHIE</h4>
+                                <p>PEANUT • BROWNIE</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="menu-item" data-aos="fade-up">
+                        <!-- <span class="spec spec-top-left">BBQ Sauce</span>
+                        <span class="spec spec-top-right">Swiss Cheese</span>
+                        <span class="spec spec-bottom-left">Pickles</span>
+                        <span class="spec spec-bottom-right">Grilled Onions</span> -->
+
+                        <div class="menu-img">
+                            <img src="images/burgers/cold-coffee.png" alt="Burger">
+                        </div>
+
+                        <div class="menu-img-overlay">
+                            <div class="menu-overlay-content">
+                                <h4>COLD COFFEE</h4>
+                                <p>CHOCOLATE • COFFEE</p>
                             </div>
                         </div>
 
@@ -419,6 +339,11 @@
 
 
             </div>
+
+            <div class="d-lg-none d-flex justify-content-center">
+                <a href="menu.html" class="btn primary-btn" data-aos="fade-left" data-aos-delay="100">View All Items</a>
+            </div>
+
         </div>
     </section>
 
@@ -483,6 +408,51 @@
         </div>
     </section>
 
+    <section class="ingredients-section">
+        <div class="container text-center">
+
+            <h2 class="ingredients-title mb-5" data-aos="fade-up">
+                <span class="line-1">Real Flavours</span>
+                <span class="line-2">No Shortcuts</span>
+            </h2>
+
+
+            <div class="row g-4 justify-content-center">
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="ingredient-card" data-aos="fade-up">
+                        <img src="images/real-sec-img-1.png" alt="Chef Driven" class="badge-img tilt-right">
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="ingredient-card" data-aos="fade-up">
+                        <img src="images/real-sec-img-2.png" alt="Fast Casual" class="badge-img tilt-left">
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="ingredient-card" data-aos="fade-up">
+                        <img src="images/real-sec-img-3.png" alt="Home Grown" class="badge-img tilt-right">
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="ingredient-card" data-aos="fade-up">
+                        <img src="images/real-sec-img-4.png" alt="Keep Burgers Real" class="badge-img tilt-left">
+                    </div>
+                </div>
+
+            </div>
+
+
+            <a href="about.html" class="story-btn" data-aos="fade-up">
+                READ OUR STORY
+            </a>
+
+        </div>
+    </section>
+
     <section class="why-try-hero">
 
         <!-- Title -->
@@ -491,16 +461,18 @@
             <p>because,</p>
         </div>
 
-        <!-- Floating Text Labels -->
-        <div class="float-text best">Best Quality</div>
-        <div class="float-text natural">Natural Ingredients</div>
-        <div class="float-text fast">Fast Delivery</div>
-        <div class="float-text huge">Huge Quantity</div>
+        <div class="reason-tags">
+            <span>Best Quality</span>
+            <span>Natural Ingredients</span>
+            <span>Fast Delivery</span>
+            <span>Huge Quantity</span>
+        </div>
 
-        <!-- MASSIVE BURGER IMAGE -->
-        <!-- <div class="burger-stage"> -->
-        <img src="images/burgerrrr.png" alt="Burger" class="mega-burger" data-aos="zoom-in-up" data-aos-delay="400">
-        <!-- </div> -->
+        <div class="burger-wrap">
+            <img src="images/burgerrrr.png" alt="Burger" class="mega-burger" data-aos="zoom-in-up" data-aos-delay="300">
+        </div>
+
+        
 
     </section>
 
@@ -566,12 +538,12 @@
     <footer class="footer-section foot-back">
         <div class="container">
 
-            <div class="row g-5">
+            <div class="row g-lg-5">
 
                 <!-- LEFT COLUMN -->
                 <div class="col-lg-4">
 
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand d-lg-block d-flex justify-content-center href=" index.html">
                         <span class="brand-logo"><img src="images/smudge-logo.png" alt="" class="img-fluid"></span>
                     </a>
 
@@ -688,64 +660,8 @@
         </div>
     </footer>
 
-
-    <!-- Contact Section -->
-    <!-- <section id="contact" class="contact-section py-5">
-        <div class="container" data-aos="fade-up">
-            <h2 class="section-title text-center mb-5">Contact Us</h2>
-            <div class="row">
-                <div class="col-lg-6 mb-4">
-                    <form class="contact-form">
-                        <div class="mb-3">
-                            <input type="text" class="form-control" placeholder="Your Name" required>
-                        </div>
-                        <div class="mb-3">
-                            <input type="email" class="form-control" placeholder="Your Email" required>
-                        </div>
-                        <div class="mb-3">
-                            <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
-                        </div>
-                        <button type="submit" class="btn-order-hero w-100">Send Message</button>
-                    </form>
-                </div>
-                <div class="col-lg-6">
-                    <div class="contact-info">
-                        <div class="info-item mb-4">
-                            <i class="fas fa-phone"></i>
-                            <div>
-                                <h4>Phone</h4>
-                                <p>+10 123 456 7898</p>
-                            </div>
-                        </div>
-                        <div class="info-item mb-4">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <h4>Email</h4>
-                                <p>info@burgers.com</p>
-                            </div>
-                        </div>
-                        <div class="info-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <h4>Address</h4>
-                                <p>123 Food Street, City, Country</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-
-    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-    <!-- Custom JS -->
     <script src="javascript/script.js"></script>
 
 </body>
