@@ -232,7 +232,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
     },
-    { threshold: 0.3 }
+    { threshold: 0.3 },
   );
 
   observer.observe(document.querySelector(".footer-animated-images"));
@@ -257,4 +257,43 @@ filterBtns.forEach((btn) => {
           : "none";
     });
   });
+});
+
+// CONTACT FORM
+document.getElementById("contactForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  const form = this;
+  const responseDiv = document.getElementById("formResponse");
+
+  responseDiv.innerHTML = `
+        <div class="alert alert-info">
+            Submitting your message...
+        </div>
+    `;
+
+  fetch(form.action, {
+    method: "POST",
+    body: new FormData(form),
+  })
+    .then((response) => response.text())
+    .then((data) => {
+      responseDiv.innerHTML = `
+            <div class="alert alert-success">
+                ✅ Your form has been submitted successfully!
+            </div>
+        `;
+      form.reset();
+
+      setTimeout(() => {
+        responseDiv.innerHTML = "";
+      }, 5000);
+    })
+    .catch(() => {
+      responseDiv.innerHTML = `
+            <div class="alert alert-danger">
+                ❌ Something went wrong. Please try again.
+            </div>
+        `;
+    });
 });
